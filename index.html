@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>STRML by STRML</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/STRML">View On GitHub</a></li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>STRML</h1>
+          <p>Node.js/MongoDB Hacker</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/STRML">STRML</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h3>Recent Projects.</h3>
+
+<p><a href="www.tixelated.com">Tixelated</a></p>
+
+<p><img src="images/tixelated.png" alt="Tixelated"></p>
+
+<p><a href="https://github.com/STRML/mongoose-filter-denormalize">Mongoose-Filter-Denormalize</a></p>
+
+<div class="highlight">
+<pre><span class="nx">UserSchema</span><span class="p">.</span><span class="nx">plugin</span><span class="p">(</span><span class="nx">filter</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">readFilter</span><span class="o">:</span> <span class="p">{</span>
+      <span class="s2">"owner"</span> <span class="o">:</span> <span class="p">[</span><span class="s1">'name'</span><span class="p">,</span> <span class="s1">'address'</span><span class="p">,</span> <span class="s1">'fb.id'</span><span class="p">,</span> <span class="s1">'fb.name'</span><span class="p">,</span> <span class="s1">'readOnlyField'</span><span class="p">],</span>
+      <span class="s2">"public"</span><span class="o">:</span> <span class="p">[</span><span class="s1">'name'</span><span class="p">,</span> <span class="s1">'fb.name'</span><span class="p">]</span>
+  <span class="p">},</span>
+  <span class="nx">writeFilter</span><span class="o">:</span> <span class="p">{</span>
+      <span class="s2">"owner"</span> <span class="o">:</span> <span class="p">[</span><span class="s1">'name'</span><span class="p">,</span> <span class="s1">'address'</span><span class="p">,</span> <span class="s1">'fb.id'</span><span class="p">,</span> <span class="s1">'writeOnlyField'</span><span class="p">]</span>
+  <span class="p">},</span>
+  <span class="nx">defaultFilterRole</span><span class="o">:</span> <span class="s1">'public'</span><span class="p">,</span>
+  <span class="nx">sanitize</span><span class="o">:</span> <span class="kc">true</span> <span class="c1">// Escape HTML in strings</span>
+<span class="p">});</span>
+
+<span class="nx">UserSchema</span><span class="p">.</span><span class="nx">plugin</span><span class="p">(</span><span class="nx">denormalize</span><span class="p">,</span> <span class="p">{</span><span class="nx">defaults</span><span class="o">:</span> <span class="p">[</span><span class="s1">'address'</span><span class="p">,</span> <span class="s1">'transactions'</span><span class="p">,</span> <span class="s1">'tickets'</span><span class="p">],</span> <span class="nx">exclude</span><span class="o">:</span> <span class="s1">'bankaccount'</span><span class="p">});</span>
+</pre>
+</div>
+
+
+<p><a href="https://github.com/STRML/jquery.scrollingShadows">jQuery.scrollingShadows</a></p>
+
+<p><a href="strml.github.com/examples/jquery.scrollingShadows.html">Demo</a></p>
+
+<div class="highlight">
+<pre><span class="nx">$</span><span class="p">(</span><span class="s2">"#viewport"</span><span class="p">).</span><span class="nx">scrollingShadows</span><span class="p">(</span><span class="s2">".longTextBox"</span><span class="p">);</span>
+</pre>
+</div>
+
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+    
+  </body>
+</html>
