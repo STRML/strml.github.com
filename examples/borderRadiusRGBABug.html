@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title>Chrome border-radius / transparent border perf bug</title>
+    <style>
+      .btn{
+        border: 1px solid #c5c5c5;
+        border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+        width: 400px;
+        height: 20px;
+        border-radius: 0;
+        background: #555;
+        color: #eee;
+        text-align: center;
+        margin: 5px 0;
+        display: inline-block;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div style="white-space: pre">
+        Notice slow paint speed. To illustration, turn on continuous painting in the debugger.
+        Paint speed returns to normal when either border-radius is 1px or higher, or the transparent border is removed.
+    </div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+  </body>
+</html>
