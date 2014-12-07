@@ -26,6 +26,15 @@
         <h3>
 <a id="recent-projects" class="anchor" href="#recent-projects" aria-hidden="true"><span class="octicon octicon-link"></span></a>Recent Projects.</h3>
 
+<p><a href="https://www.bitmex.com">BitMEX - The Bitcoin Mercantile Exchange</a></p>
+
+<p><img src="images/bitmex.jpg" alt="BitMEX"></p>
+
+<div class="highlight highlight-javascript"><pre><span class="pl-s">var</span> grossValue <span class="pl-k">=</span> backingOrder.getGrossValue();
+<span class="pl-s">var</span> initialMarginBuy <span class="pl-k">=</span> backingOrder.getMarginRequirement(<span class="pl-v">this</span>.props.orderInputQuantity);
+<span class="pl-s">var</span> initialMarginSell <span class="pl-k">=</span> backingOrder.getMarginRequirement(<span class="pl-k">-</span><span class="pl-v">this</span>.props.orderInputQuantity);
+<span class="pl-s">var</span> commissionDef <span class="pl-k">=</span> backingOrder.getUserCommission()[<span class="pl-v">this</span>.props.selectedInstrument.symbol];</pre></div>
+
 <p><a href="http://securesha.re">Securesha.re</a></p>
 
 <p><img src="images/secureshare.png" alt="Securesha.re"></p>
