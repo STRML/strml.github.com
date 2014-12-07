@@ -3,86 +3,74 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>STRML by STRML</title>
+    <title>Samuel Reed by STRML</title>
+
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/STRML">View On GitHub</a></li>
-        </nav>
-      </div><!-- end header -->
-
     <div class="wrapper">
+      <header>
+        <h1>Samuel Reed</h1>
+        <p>CTO of BitMEX.com, NodeJS &amp; Javascript Enthusiast</p>
 
+
+        <p class="view"><a href="https://github.com/STRML">View My GitHub Profile</a></p>
+
+      </header>
       <section>
-        <div id="title">
-          <h1>STRML</h1>
-          <p>Node/PHP/Java/JS Hacker</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/STRML">STRML</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
-        </div>
-
-        <h3>Recent Projects.</h3>
+        <h3>
+<a id="recent-projects" class="anchor" href="#recent-projects" aria-hidden="true"><span class="octicon octicon-link"></span></a>Recent Projects.</h3>
 
 <p><a href="http://securesha.re">Securesha.re</a></p>
 
-<p><a href="http://securesha.re"><img src="images/secureshare.png" alt="Securesha.re"></a></p>
+<p><img src="images/secureshare.png" alt="Securesha.re"></p>
 
-<div class="highlight"><pre><span class="p">...</span>
-<span class="kd">var</span> <span class="nx">fileReader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">FileReaderSync</span><span class="p">();</span>
-<span class="kd">var</span> <span class="nx">fileData</span> <span class="o">=</span> <span class="nx">fileReader</span><span class="p">.</span><span class="nx">readAsBinaryString</span><span class="p">(</span><span class="nx">oEvent</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">file</span><span class="p">);</span>
+<div class="highlight highlight-javascript"><pre>...
+<span class="pl-s">var</span> fileReader <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">FileReaderSync</span>();
+<span class="pl-s">var</span> fileData <span class="pl-k">=</span> fileReader.readAsBinaryString(oEvent.<span class="pl-sc">data</span>.file);
 
-<span class="kd">var</span> <span class="nx">encrypted</span> <span class="o">=</span> <span class="p">{};</span>
-<span class="nx">encrypted</span><span class="p">.</span><span class="nx">fileData</span> <span class="o">=</span> <span class="nx">CryptoJS</span><span class="p">.</span><span class="nx">Rabbit</span><span class="p">.</span><span class="nx">encrypt</span><span class="p">(</span><span class="nx">fileData</span><span class="p">,</span> <span class="nx">oEvent</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">passphrase</span><span class="p">).</span><span class="nx">toString</span><span class="p">();</span>
-<span class="nx">encrypted</span><span class="p">.</span><span class="nx">fileName</span> <span class="o">=</span> <span class="nx">CryptoJS</span><span class="p">.</span><span class="nx">Rabbit</span><span class="p">.</span><span class="nx">encrypt</span><span class="p">(</span><span class="nx">oEvent</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">file</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span> <span class="nx">oEvent</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">passphrase</span><span class="p">).</span><span class="nx">toString</span><span class="p">();</span>
-<span class="nx">postMessage</span><span class="p">(</span><span class="nx">encrypted</span><span class="p">);</span>
-<span class="p">...</span>
-</pre></div>
+<span class="pl-s">var</span> encrypted <span class="pl-k">=</span> {};
+encrypted.fileData <span class="pl-k">=</span> CryptoJS.Rabbit.encrypt(fileData, oEvent.<span class="pl-sc">data</span>.passphrase).<span class="pl-s3">toString</span>();
+encrypted.fileName <span class="pl-k">=</span> CryptoJS.Rabbit.encrypt(oEvent.<span class="pl-sc">data</span>.file.<span class="pl-sc">name</span>, oEvent.<span class="pl-sc">data</span>.passphrase).<span class="pl-s3">toString</span>();
+postMessage(encrypted);
+...</pre></div>
 
 <p><a href="www.tixelated.com">Tixelated</a></p>
 
-<p><a href="http://tixelated.com"><img src="images/tixelated.png" alt="Tixelated"></a></p>
+<p><img src="images/tixelated.png" alt="Tixelated"></p>
 
 <p><a href="https://github.com/STRML/mongoose-filter-denormalize">Mongoose-Filter-Denormalize</a></p>
 
-<div class="highlight"><pre><span class="nx">UserSchema</span><span class="p">.</span><span class="nx">plugin</span><span class="p">(</span><span class="nx">filter</span><span class="p">,</span> <span class="p">{</span>
-  <span class="nx">readFilter</span><span class="o">:</span> <span class="p">{</span>
-      <span class="s2">"owner"</span> <span class="o">:</span> <span class="p">[</span><span class="s1">'name'</span><span class="p">,</span> <span class="s1">'address'</span><span class="p">,</span> <span class="s1">'fb.id'</span><span class="p">,</span> <span class="s1">'fb.name'</span><span class="p">,</span> <span class="s1">'readOnlyField'</span><span class="p">],</span>
-      <span class="s2">"public"</span><span class="o">:</span> <span class="p">[</span><span class="s1">'name'</span><span class="p">,</span> <span class="s1">'fb.name'</span><span class="p">]</span>
-  <span class="p">},</span>
-  <span class="nx">writeFilter</span><span class="o">:</span> <span class="p">{</span>
-      <span class="s2">"owner"</span> <span class="o">:</span> <span class="p">[</span><span class="s1">'name'</span><span class="p">,</span> <span class="s1">'address'</span><span class="p">,</span> <span class="s1">'fb.id'</span><span class="p">,</span> <span class="s1">'writeOnlyField'</span><span class="p">]</span>
-  <span class="p">},</span>
-  <span class="nx">defaultFilterRole</span><span class="o">:</span> <span class="s1">'public'</span><span class="p">,</span>
-  <span class="nx">sanitize</span><span class="o">:</span> <span class="kc">true</span> <span class="c1">// Escape HTML in strings</span>
-<span class="p">});</span>
+<div class="highlight highlight-javascript"><pre>UserSchema.plugin(filter, {
+  readFilter<span class="pl-k">:</span> {
+      <span class="pl-s1"><span class="pl-pds">"</span>owner<span class="pl-pds">"</span></span> <span class="pl-k">:</span> [<span class="pl-s1"><span class="pl-pds">'</span>name<span class="pl-pds">'</span></span>, <span class="pl-s1"><span class="pl-pds">'</span>address<span class="pl-pds">'</span></span>, <span class="pl-s1"><span class="pl-pds">'</span>fb.id<span class="pl-pds">'</span></span>, <span class="pl-s1"><span class="pl-pds">'</span>fb.name<span class="pl-pds">'</span></span>, <span class="pl-s1"><span class="pl-pds">'</span>readOnlyField<span class="pl-pds">'</span></span>],
+      <span class="pl-s1"><span class="pl-pds">"</span>public<span class="pl-pds">"</span></span><span class="pl-k">:</span> [<span class="pl-s1"><span class="pl-pds">'</span>name<span class="pl-pds">'</span></span>, <span class="pl-s1"><span class="pl-pds">'</span>fb.name<span class="pl-pds">'</span></span>]
+  },
+  writeFilter<span class="pl-k">:</span> {
+      <span class="pl-s1"><span class="pl-pds">"</span>owner<span class="pl-pds">"</span></span> <span class="pl-k">:</span> [<span class="pl-s1"><span class="pl-pds">'</span>name<span class="pl-pds">'</span></span>, <span class="pl-s1"><span class="pl-pds">'</span>address<span class="pl-pds">'</span></span>, <span class="pl-s1"><span class="pl-pds">'</span>fb.id<span class="pl-pds">'</span></span>, <span class="pl-s1"><span class="pl-pds">'</span>writeOnlyField<span class="pl-pds">'</span></span>]
+  },
+  defaultFilterRole<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>public<span class="pl-pds">'</span></span>,
+  sanitize<span class="pl-k">:</span> <span class="pl-c1">true</span> <span class="pl-c">// Escape HTML in strings</span>
+});
 
-<span class="nx">UserSchema</span><span class="p">.</span><span class="nx">plugin</span><span class="p">(</span><span class="nx">denormalize</span><span class="p">,</span> <span class="p">{</span><span class="nx">defaults</span><span class="o">:</span> <span class="p">[</span><span class="s1">'address'</span><span class="p">,</span> <span class="s1">'transactions'</span><span class="p">,</span> <span class="s1">'tickets'</span><span class="p">],</span> <span class="nx">exclude</span><span class="o">:</span> <span class="s1">'bankaccount'</span><span class="p">});</span>
-</pre></div>
+UserSchema.plugin(denormalize, {defaults<span class="pl-k">:</span> [<span class="pl-s1"><span class="pl-pds">'</span>address<span class="pl-pds">'</span></span>, <span class="pl-s1"><span class="pl-pds">'</span>transactions<span class="pl-pds">'</span></span>, <span class="pl-s1"><span class="pl-pds">'</span>tickets<span class="pl-pds">'</span></span>], exclude<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>bankaccount<span class="pl-pds">'</span></span>});</pre></div>
 
 <p><a href="https://github.com/STRML/jquery.scrollingShadows">jQuery.scrollingShadows</a></p>
 
 <p><a href="strml.github.com/examples/jquery.scrollingShadows.html">Demo</a></p>
 
-<div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s2">"#viewport"</span><span class="p">).</span><span class="nx">scrollingShadows</span><span class="p">(</span><span class="s2">".longTextBox"</span><span class="p">);</span>
-</pre></div>
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-s1"><span class="pl-pds">"</span>#viewport<span class="pl-pds">"</span></span>).scrollingShadows(<span class="pl-s1"><span class="pl-pds">"</span>.longTextBox<span class="pl-pds">"</span></span>);</pre></div>
       </section>
-
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-
+    <script src="javascripts/scale.fix.js"></script>
+    
   </body>
 </html>
